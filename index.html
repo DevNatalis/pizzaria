@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Perfection Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i data-feather="pizza" class="text-red-600 w-8 h-8 mr-2"></i>
+                <span class="text-2xl font-bold text-red-600">Pizza Perfection</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link">Início</a>
+                <a href="#menu" class="nav-link">Cardápio</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="btn-primary" onclick="window.location.href='https://api.whatsapp.com/send/?phone=%2B5562981314390&text&type=phone_number&app_absent=0'">
+                    <i data-feather="phone" class="mr-2 w-4 h-4"></i>
+                    Pedir agora
+                </button>
+                <button class="mobile-menu-btn">
+                    <i data-feather="menu" class="w-6 h-6 text-gray-800"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container mx-auto px-4 py-32 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="hero-title">A melhor pizza da cidade</h1>
+                <p class="hero-subtitle">Feita com ingredientes frescos e amor italiano</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="btn-primary btn-large" onclick="window.location.href='https://api.whatsapp.com/send/?phone=%2B5562981314390&text&type=phone_number&app_absent=0'">
+                        <i data-feather="shopping-cart" class="mr-2" ></i>
+                        Fazer pedido
+                    </button>
+                    <button class="btn-secondary btn-large">
+                        <i data-feather="map" class="mr-2"></i>
+                        Nossa localização
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Pizzas -->
+    <section id="menu" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Nossas Pizzas Especiais</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pizza 1 -->
+                <div class="pizza-card">
+                    <img src="1.jpg" alt="Pizza Margherita" class="pizza-image">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="pizza-name">Margherita</h3>
+                            <span class="price-tag">R$ 39,90</span>
+                        </div>
+                        <p class="pizza-description">Molho de tomate, mussarela fresca, manjericão e azeite de oliva.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <span class="text-sm text-gray-600">4.9 (120)</span>
+                            </div>
+                            <button class="btn-add" onclick="window.location.href='https://api.whatsapp.com/send/?phone=%2B5562981314390&text&type=phone_number&app_absent=0'">
+                                <i data-feather="plus" class="w-3 h-3 mr-1"></i>
+                                Pedir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 2 -->
+                <div class="pizza-card">
+                    <img src="1.jpg" alt="Pizza Pepperoni" class="pizza-image">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="pizza-name">Pepperoni</h3>
+                            <span class="price-tag">R$ 44,90</span>
+                        </div>
+                        <p class="pizza-description">Molho de tomate, mussarela e pepperoni premium.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <span class="text-sm text-gray-600">4.8 (95)</span>
+                            </div>
+                            <button class="btn-add" onclick="window.location.href='https://api.whatsapp.com/send/?phone=%2B5562981314390&text&type=phone_number&app_absent=0'">
+                                <i data-feather="plus" class="w-3 h-3 mr-1"></i>
+                                Pedir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 3 -->
+                <div class="pizza-card">
+                    <img src="1.jpg" alt="Pizza Quatro Queijos" class="pizza-image">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="pizza-name">Quatro Queijos</h3>
+                            <span class="price-tag">R$ 49,90</span>
+                        </div>
+                        <p class="pizza-description">Molho de tomate, mussarela, gorgonzola, parmesão e catupiry.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <span class="text-sm text-gray-600">4.7 (87)</span>
+                            </div>
+                            <button class="btn-add" onclick="window.location.href='https://api.whatsapp.com/send/?phone=%2B5562981314390&text&type=phone_number&app_absent=0'">
+                                <i data-feather="plus" class="w-3 h-3 mr-1"></i>
+                                Pedir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <button class="btn-outline">
+                    Ver cardápio completo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <img src="1.jpg" alt="Pizzaiolo" class="about-image">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="section-title text-left">Nossa História</h2>
+                    <p class="text-gray-600 mb-4">Fundada em 1995 pelo mestre pizzaiolo italiano Giovanni Rossi, a Pizza
+                        Perfection traz autênticas receitas da nonna para o Brasil.</p>
+                    <p class="text-gray-600 mb-6">Usamos apenas ingredientes frescos e de alta qualidade, com massa
+                        artesanal fermentada por 48 horas para garantir a textura perfeita.</p>
+
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-feather="check-circle" class="text-red-600 w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium">Ingredientes frescos</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-feather="check-circle" class="text-red-600 w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium">Forno à lenha</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-feather="check-circle" class="text-red-600 w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium">Receitas autênticas</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-feather="check-circle" class="text-red-600 w-5 h-5"></i>
+                            </div>
+                            <span class="font-medium">Entrega rápida</span>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary">
+                        <i data-feather="book-open" class="mr-2"></i>
+                        Conheça nossa história
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Ingredientes Premium</h2>
+                <p class="section-subtitle">Usamos apenas os melhores ingredientes para garantir o sabor autêntico da
+                    Itália</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i data-feather="coffee" class="text-red-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="ingredient-name">Massa Artesanal</h3>
+                    <p class="ingredient-description">Fermentada por 48 horas para textura perfeita</p>
+                </div>
+
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i data-feather="droplet" class="text-red-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="ingredient-name">Azeite Extra Virgem</h3>
+                    <p class="ingredient-description">Importado diretamente da Toscana</p>
+                </div>
+
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i data-feather="leaf" class="text-red-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="ingredient-name">Manjericão Fresco</h3>
+                    <p class="ingredient-description">Colhido diariamente de nossa horta</p>
+                </div>
+
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i data-feather="heart" class="text-red-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="ingredient-name">Mussarela de Búfala</h3>
+                    <p class="ingredient-description">Direto da Campânia, Itália</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="section-title">O que dizem nossos clientes</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Cliente" class="testimonial-image">
+                        <div>
+                            <h4 class="testimonial-name">Carlos Silva</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"A melhor pizza que já comi! A massa é perfeita e os ingredientes são de
+                        primeira qualidade. Recomendo a Margherita!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Cliente" class="testimonial-image">
+                        <div>
+                            <h4 class="testimonial-name">Ana Oliveira</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Sempre peço a Quatro Queijos e nunca me decepciona. A entrega é super
+                        rápida e a pizza chega quentinha!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/3" alt="Cliente" class="testimonial-image">
+                        <div>
+                            <h4 class="testimonial-name">Roberto Santos</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"A Pepperoni é incrível! O pepperoni é de qualidade premium e a
+                        quantidade é generosa. Minha família adora!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="cta-title">Pronto para experimentar a melhor pizza da cidade?</h2>
+            <p class="cta-subtitle">Faça seu pedido agora e receba em até 30 minutos ou retire no local.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="btn-cta-primary" onclick="window.location.href='https://api.whatsapp.com/send/?phone=%2B5562981314390&text&type=phone_number&app_absent=0'">
+                    <i data-feather="shopping-cart" class="mr-2"></i>
+                    Fazer pedido
+                </button>
+                <button class="btn-cta-secondary">
+                    <i data-feather="phone" class="mr-2"></i>
+                    (11) 1234-5678
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="pizza" class="text-red-600 w-8 h-8 mr-2"></i>
+                        <span class="footer-logo">Pizza Perfection</span>
+                    </div>
+                    <p class="footer-text mb-4">A autêntica pizza italiana feita com amor e ingredientes premium.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Início</a></li>
+                        <li><a href="#menu" class="footer-link">Cardápio</a></li>
+                        <li><a href="#about" class="footer-link">Sobre</a></li>
+                        <li><a href="#contact" class="footer-link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Horário de Funcionamento</h3>
+                    <ul class="footer-text-list">
+                        <li>Segunda a Quinta: 18h - 23h</li>
+                        <li>Sexta e Sábado: 18h - 00h</li>
+                        <li>Domingo: 18h - 22h</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-heading">Contato</h3>
+                    <ul class="footer-text-list">
+                        <li class="footer-contact-item">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2"></i>
+                            Rua das Pizzas, 123 - Centro
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-feather="phone" class="w-4 h-4 mr-2"></i>
+                            (11) 1234-5678
+                        </li>
+                        <li class="footer-contact-item">
+                            <i data-feather="mail" class="w-4 h-4 mr-2"></i>
+                            contato@pizzaperfection.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pizza Perfection. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
